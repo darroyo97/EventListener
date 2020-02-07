@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DOT</title>
+    <style>
+        .dot {
+            position: absolute;
+            background-color: rgb(238, 115, 135);
+            height: 10px;
+            width: 10px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    nothing here
+    <div style="top: 5px; left:50px"></div>
+    <script>
+        window.addEventListener('keydown', function (e) {
+            console.log(e)
+            if (e.key == "d" || e.key == "D") {
+                document.body.style.backgroundColor = "pink"
+            }
+        })
+        window.addEventListener('keyup', function (e) {
+            console.log(e)
+            if (e.key == "d" || e.key == "D") {
+                document.body.style.backgroundColor = ""
+            }
+        })
+
+        // window.addEventListener('click', function (e) {
+        //     console.log(e)
+        //     let dot = document.createElement('div')
+        //     dot.className = 'dot'
+        //     dot.style.left = (e.pageX - 4).toString() + 'px'
+        //     dot.style.top = (e.pageY - 4).toString() + 'px'
+
+        //     document.body.append(dot);
+
+        // })
+    </script>
+</body>
+
+</html>
