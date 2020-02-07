@@ -1,28 +1,63 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>JavaScript Events</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
   <ul>
     <li><img src="images/ylw.gif" alt="yellow" id="yellow"></li>
     <li><img src="images/org.gif" alt="orange" id="orange"></li>
     <li><img src="images/ppl.gif" alt="purple" id="purple"></li>
     <li><img src="images/blu.gif" alt="blue" id="blue"></li>
-    <li><img src="images/pnk.gif" alt="pink" id="pink"  ></li>
+    <li><img src="images/pnk.gif" alt="pink" id="pink"></li>
     <li><img src="images/grn.gif" alt="green" id="green"></li>
     <li><img src="images/ygr.gif" alt="ygreen" id="ygreen"></li>
     <li><img src="images/gry.gif" alt="gray" id="gray"></li>
     <li><img src="images/red.gif" alt="red" id="red"></li>
   </ul>
 
-  
-  <script>
 
-    
+  <script>
+    let ul = document.querySelector('ul');
+    ul.addEventListener('click', function (e) {
+      // console.log(e.target.id)
+      // var expr = 'color';
+      switch (e.target.id) {
+        case 'yellow':
+          alert('you clicked on gold')
+          break;
+        case 'orange':
+          alert('you clicked on orange')
+          break;
+        case 'purple':
+          alert('you clicked on purple')
+          break;
+        case 'blue':
+          alert('you clicked on blue')
+          break;
+        case 'pink':
+          alert('you clicked on pink')
+          break;
+        case 'green':
+          alert('you clicked on sky blue')
+          break;
+        case 'ygreen':
+          alert('you clicked on yellow green')
+          break;
+        case 'gray':
+          alert('you clicked on gray')
+          break;
+        case 'red':
+          alert('you clicked on red')
+          break;
+      }
+    })
   </script>
 
 </body>
+
 </html>
